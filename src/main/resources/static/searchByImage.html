@@ -94,7 +94,7 @@
     }
   </script>
 </head>
-
+<h1>Search By Picture</h1>
 <body onload="startVideo();">
   <div class="camera">
     <video id="video" autoplay>Video stream not available.</video>
@@ -102,8 +102,7 @@
   </div>
   <canvas id="canvas">
   </canvas>
-  <form action="http://localhost/imageCollector.php" method="POST" onsubmit="return prepImageForSaving()">
-    <input type="text" id="fileName" name="fileName">
+  <form action="/searchByPicture" method="POST" onsubmit="return prepImageForSaving()">
     <input type="hidden" id="savedImage" name="savedImage">
     <input type="submit" id="saveButton" name="saveButton">
   </form>
