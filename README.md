@@ -1,5 +1,9 @@
 # web-image-capture
 Captures a picture from a webcam, and posts it to aws rekog service
+<br/>
+Create an AWS collection read for indexed faces:<br/>
+aws rekognition create-collection --collection-id "cwinDemo" --region eu-west-1<br/>
+<br/>
 
 Create your own aws.properties file in src/main/resources <br/>
 with contents:<br/>
